@@ -1,4 +1,5 @@
 "use strict"
-const category = 'toys'
+let incr = 10, decr = 10
 
-console.log(`https://someurl.com/${category}/5`)
+console.log(incr++)
+console.log(--decr)
