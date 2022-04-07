@@ -1,28 +1,27 @@
 "use strict"
 
-const btn = document.querySelector('button')
+// console.log(document.head); <head></head>
+// console.log(document.documentElement); <html></html>
+// console.log(document.body.childNodes); 
+// firstElementChild \ lastElementChild
+// console.log(document.body.firstChild); 
+// console.log(document.body.lastChild); 
 
-// btn.onclick = function() {
 
+// console.log(document.querySelector('#current').parentNode); 
+// console.log(document.querySelector('#current').parentNode.parentNode); 
+
+
+//data-id
+// nextSibling \ previousSibling /// get a free space
+
+// console.log(document.querySelector('[data-id="3"]')); 
+
+// nextElementSibling  \   previousElementSibling
+
+
+// for (let node of document.body.childNodes) {
+//     if(node.nodeName == '#text') {
+//         continue;
+//     }
 // }
-
-// // mouseenter, 
-// btn.addEventListener('click', (event) => {
-//     console.log(event.target);
-//     event.target.remove()
-//     // alert('cliked')
-// })
-
-let i = 0
-const deleteElement = (event) => {
-    event.target.remove()
-    i++
-    if(i == 1) {
-        btn.removeEventListener('click', deleteElement)
-    }
-}
-btn.addEventListener('click', deleteElement)
-
-
-// event.preventDefault()
-// btn.addEventListener('click', deleteElement, {once: true})
