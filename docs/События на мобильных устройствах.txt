@@ -1,0 +1,25 @@
+touchstart - Касание элемента
+touchmove - Палец при касание элемента начинает двигаться
+touchend
+
+touchenter - При движении пальца по экрану и касания какого либо элемента
+touchleave
+
+touchcancel
+
+window.addEventListener('DOMContentLoader', () => {
+
+	const box = document.querySelector('.box')
+	
+	box.addEventListener('touchstart', (event) => {
+		event.preventDefault(); // Обязательно
+
+	})
+})
+
+
+event.touches
+event.targetTouches
+event.changedTouches
+
+
